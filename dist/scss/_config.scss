@@ -1,0 +1,34 @@
+$primary-color: rgb(245, 243, 243);
+$secondary-color: rgb(139, 218, 159);
+$text-color:rgb(39, 37, 37);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin side-nav {
+  position: fixed;
+  height: 100vh;
+  min-width: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin top-nav {
+ 
+  height: 80px;
+  width: 100%;
+}
+
+@mixin basic-link{
+  font-size: 0.8rem;
+  color: $text-color;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
