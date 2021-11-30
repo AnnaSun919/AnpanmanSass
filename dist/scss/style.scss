@@ -1,12 +1,11 @@
 @import 'config';
 @import 'nav';
+@import 'information';
 
 
 body {
   background-color:$primary-color;
   color: $text-color;
-
-  
 }
 
 
@@ -25,11 +24,20 @@ width: 90%;
 height: auto;
 overflow: hidden;
 background-size: cover;
-margin: 10px 5vh;
+margin: 10px 10px;
 
   }
 }
 
+main{
+  margin:10px 20vh;
+}
+
+
+.content-title{
+  font-weight: lighter;
+  color: $title-color;
+}
 
 footer{
 text-align: center;

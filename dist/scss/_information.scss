@@ -1,0 +1,43 @@
+
+.content{
+margin: 10px 0px;
+display: flex;
+
+
+
+.image-container{
+float:left;
+width: 35%;
+
+}
+
+&__img{
+width:100%;
+height:auto;
+}
+
+.info{
+
+float:right;
+width: 65%;
+margin:0 10px;
+
+.subtitle{
+  font-size:$subtile-font-size;
+  color: $text-color;
+  padding: 5px 0px 5px 5px;
+
+  text-transform: uppercase;
+  border-bottom: 1px solid $title-color;
+  // border-left: 5px solid $secondary-color;
+
+}
+
+span{
+  display: inline-block;
+  color: $text-color;
+  margin:10px 0px;
+}
+}
+
+}

@@ -6,7 +6,7 @@
 }
 
 .nav {
-  background-color: #f5f3f3;
+  background-color: #fdfafa;
   position: fixed;
   height: 100vh;
   min-width: 300px;
@@ -34,8 +34,23 @@
   font-weight: 300;
 }
 
+.nav .menu-list__link div {
+  text-align: center;
+  width: 100%;
+}
+
 .nav .menu-list__link span {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.nav .menu-list__link .jap {
+  font-weight: bold;
+}
+
+.nav .menu-list__link .english {
+  color: rgba(119, 118, 118, 0.541);
+  font-weight: 100;
+  text-transform: lowercase;
 }
 
 .nav .menu-list__link:hover {
@@ -72,8 +87,68 @@
   padding: 0 10px;
 }
 
+.content-nav .menu-list__link div {
+  text-align: center;
+  width: 100%;
+}
+
+.content-nav .menu-list__link span {
+  font-size: 1.2rem;
+}
+
+.content-nav .menu-list__link .jap {
+  font-weight: bold;
+}
+
+.content-nav .menu-list__link .english {
+  color: rgba(119, 118, 118, 0.541);
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+.content-nav .menu-list__link:hover {
+  color: #a8a3a3;
+}
+
+.content {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .image-container {
+  float: left;
+  width: 35%;
+}
+
+.content__img {
+  width: 100%;
+  height: auto;
+}
+
+.content .info {
+  float: right;
+  width: 65%;
+  margin: 0 10px;
+}
+
+.content .info .subtitle {
+  font-size: 1.2rem;
+  color: #272525;
+  padding: 5px 0px 5px 5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #747e52;
+}
+
+.content .info span {
+  display: inline-block;
+  color: #272525;
+  margin: 10px 0px;
+}
+
 body {
-  background-color: #f5f3f3;
+  background-color: #fdfafa;
   color: #272525;
 }
 
@@ -92,7 +167,16 @@ a {
   height: auto;
   overflow: hidden;
   background-size: cover;
-  margin: 10px 5vh;
+  margin: 10px 10px;
+}
+
+main {
+  margin: 10px 20vh;
+}
+
+.content-title {
+  font-weight: lighter;
+  color: #747e52;
 }
 
 footer {

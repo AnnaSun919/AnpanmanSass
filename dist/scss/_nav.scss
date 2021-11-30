@@ -1,32 +1,16 @@
 .nav{
-
   background-color: $primary-color;
   @include side-nav;
 
   .menu-list{
 
     list-style-type: none;
-
-
+    
     &__link{
       display: inline-block;
- @include basic-link;
- 
-
-      span{
-        font-size: 0.75rem;
-      }
-
-      &:hover {
-        color: lighten($text-color, 50%);
-      }
+      @include basic-link;
     }
-
-    
   }
-
-
-
 }
 
 .content-nav{
@@ -40,17 +24,10 @@
     flex-direction: row;
     align-items: center;
    
-
- 
-
-
     &__link{
       @include basic-link;
       padding :0 10px;
     }
-
-    
-
   }
 
 }
