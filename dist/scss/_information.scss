@@ -1,14 +1,10 @@
-
 .content{
-margin: 10px 0px;
 display: flex;
-
-
 
 .image-container{
 float:left;
 width: 35%;
-
+text-align: center;
 }
 
 &__img{
@@ -17,20 +13,22 @@ height:auto;
 }
 
 .info{
-
 float:right;
 width: 65%;
 margin:0 10px;
 
 .subtitle{
   font-size:$subtile-font-size;
-  color: $text-color;
+  color: $subtitle-color;
   padding: 5px 0px 5px 5px;
-
   text-transform: uppercase;
   border-bottom: 1px solid $title-color;
-  // border-left: 5px solid $secondary-color;
 
+  &__subtitle{
+    font-size: $subtile-subtitle-font-size;
+    color: $subtitle-color;
+    padding: 5px 0px;
+  }
 }
 
 span{

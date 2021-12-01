@@ -1,34 +1,91 @@
-.nav{
+.menu-btn{
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
   background-color: $primary-color;
-  @include side-nav;
+  @include transition-ease;
 
-  .menu-list{
 
-    list-style-type: none;
-    
-    &__link{
-      display: inline-block;
-      @include basic-link;
+  &__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 2px;
+    background: $text-color;
+    @include transition-ease;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 2px;
+      background: $text-color;
+      @include transition-ease;
     }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 28px;
+      height: 2px;
+      background: $text-color;
+      @include transition-ease;
+    }
+
+    &.open {
+      transform: rotate(180deg);
+     background:transparent;
+   
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
+
   }
+
 }
 
-.content-nav{
-  @include top-nav;
 
-  .menu-list{
-    height: 100%;
-    margin-left: 30px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   
-    &__link{
-      @include basic-link;
-      padding :0 10px;
-    }
+.nav {
+position: absolute;
+width: 100vw;
+visibility: hidden;
+
+
+&.open{
+  visibility: visible;
+}
+
+.menu-list{
+
+ background:linear-gradient(175deg, $primary-color 50%, $secondary-color 50%);
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  list-style-type: none;
+
+
+
+  &__link{
+    display: inline-block;
+    @include basic-link;
   }
 
+}
 }
 

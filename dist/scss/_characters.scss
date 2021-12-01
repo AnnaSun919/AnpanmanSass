@@ -1,0 +1,63 @@
+.characters{
+
+  &__name{
+
+    background-color:$secondary-color;
+    height: 4vw;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  
+    border-bottom : 1px dotted $title-color;
+ 
+    
+    span{
+   
+      color: black;
+      border-bottom: 1px ;
+      font-size: $subtile-font-size;
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+ 
+  
+
+ 
+  }
+
+
+
+  &__items {
+    width: 75vw;
+    margin: 1rem auto 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+  }
+
+  &__item {
+
+    width: 20vw;
+
+    overflow: hidden;
+    cursor: pointer;
+    background-color:white;
+    border-radius: 1%;
+
+
+
+
+img{
+  width: 100%;
+}
+
+
+
+  }
+
+
+ 
+ 
+  
+}

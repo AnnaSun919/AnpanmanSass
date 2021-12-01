@@ -1,8 +1,11 @@
-$primary-color: rgb(253, 250, 250);
-$secondary-color: rgb(139, 218, 159);
+$primary-color: rgb(247, 245, 243);
+$secondary-color: rgb(179, 211, 240);
 $text-color:rgb(39, 37, 37);
-$title-color:rgb(116, 126, 82);
+$title-color:rgb(87, 95, 62);
+$subtitle-color:rgb(112, 79, 60);
 $subtile-font-size: 1.2rem;
+$subtile-subtitle-font-size: 1em;
+$english-color: rgba(119, 118, 118, 0.541);
 
 
 * {
@@ -14,16 +17,22 @@ $subtile-font-size: 1.2rem;
 @mixin side-nav {
   position: fixed;
   height: 100vh;
-  min-width: 300px;
+  width:20%;
+  min-width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 @mixin top-nav {
- 
+
   height: 80px;
   width: 100%;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
 }
 
 @mixin basic-link{
@@ -39,26 +48,37 @@ div{
   width: 100%;
 }
 span{
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 .jap{
   font-weight: bold;
 }
 .english{
-  color: rgba(119, 118, 118, 0.541);
+  color: $english-color;
   font-weight: 100;
   text-transform: lowercase;
 }
-
-
-
-
 
   &:hover {
     color: lighten($text-color, 50%);
   }
 }
 
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
 
 
 

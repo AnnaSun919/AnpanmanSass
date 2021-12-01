@@ -1,42 +1,51 @@
 @import 'config';
 @import 'nav';
 @import 'information';
+@import 'characters';
+@import 'responsive';
 
 
 body {
   background-color:$primary-color;
   color: $text-color;
+
 }
-
-
 a {
   color:$text-color;
   text-decoration: none; /* no underline */
 }
 
+main{
+  padding: 80px 20px 0px 20px;
+  
+}
+
 .home{
-
-margin-left: 310px;
-
-
   &__img{
-width: 90%;
+width: 100%;
 height: auto;
 overflow: hidden;
 background-size: cover;
-margin: 10px 10px;
+padding: 10px 10px;
+
 
   }
 }
 
-main{
-  margin:10px 20vh;
-}
+
 
 
 .content-title{
-  font-weight: lighter;
+  font-size: 2rem;
+  font-weight: 100;
   color: $title-color;
+
+&.characters{
+  writing-mode: vertical-rl;
+  // transform: rotate(180deg);
+  // border-left: 2px solid $title-color;
+
+}
 }
 
 footer{

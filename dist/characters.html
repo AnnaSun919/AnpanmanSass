@@ -13,14 +13,16 @@
         <span class="menu-btn__burger"></span>
       </div>
     </header>
-    <nav class="content-nav">
+    <nav class="nav" id="content">
       <ul class="menu-list">
-        <li class="menu-list__item">
+        <li class="menu-list__item" >
           <a href="/dist/index.html" class="menu-list__link"
-            ><h1 class="home__name">
-              アンパンマン
-              <span class="home__name--english"></br>Anpanman</span>
-            </h1></a
+            >
+            <div class="name">
+              <span >アンパンマン</span>
+            </br><span class="english">Anpanman</span>
+          </div>
+            </a
           >
         </li>
         <li class="menu-list__item">
@@ -37,30 +39,42 @@
       </ul>
     </nav>
 
+
     <main>
-      <div class="profile-image">
- <img src alt="Anpanman">
-        <div class="Information">
-          <h1>Information</h1>
+
+
+      <h1 class="content-title">Characters</h1>
+
+      <section class="characters">
+<div class="characters__items">
+        <div class="characters__item">
+          <a href="/dist/characters/anpanman.html"><div class="characters__name"><span>Anpanman</span></div><img src="/dist/img/anpanman character.png" ></a>
         </div>
-        <div class="characters">
-          <h1>Characters</h1>
+        <div class="characters__item">
+          <a href="/dist/characters/shokupanman.html"><div class="characters__name"><span>Shokupanman</span></div><img src="/dist/img/shokupanman1.png" ></a>
+        </div>
+        <div class="characters__item">
+          <a href="/dist/characters/currypanman.html"><div class="characters__name"><span>Currypanman</span></div><img src="/dist/img/currypanman.png" ></a>
+        </div>
+        <div class="characters__item">
+          <a href="/dist/characters/melonpanna.html"><div class="characters__name"><span>Melonpanna</span></div><img src="/dist/img/melonpanna.jpeg" ></a>
+        </div>
+        <div class="characters__item">
+          <a href="/dist/characters/baikinman.html"><div class="characters__name"><span>Baikinman</span></div><img src="/dist/img/Baikinman1.png" ></a>
         </div>
 
-        <div class="characters">
-          <h1>Characters</h1>
+        <div class="characters__item">
+          <a href="/dist/characters/dokinchan.html"><div class="characters__name"><span>Dokinchan</span></div><img src="/dist/img/dokinchan.png" ></a>
         </div>
-        <div class="characters">
-          <h1>Characters</h1>
-        </div>
-        <div class="characters">
-          <h1>Characters</h1>
-        </div>
-        <footer>&copy; Copyright 2022</footer>
+
       </div>
+
+      </section>
+  
+
 
   
     </main>
-
+    <script src="js/main.js"></script>
   </body>
 </html>
