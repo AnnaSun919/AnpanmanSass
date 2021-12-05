@@ -6,7 +6,7 @@ const navItems = document.querySelectorAll(".menu-list__item");
 
 let showMenu = false;
 
-menuBtn.addEventListener("click", toggleMenu);
+hamburger.addEventListener("click", toggleMenu);
 
 console.log(showMenu);
 

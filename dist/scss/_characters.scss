@@ -3,6 +3,7 @@
   &__name{
 
     background-color:$secondary-color;
+    min-height: 30px;
     height: 4vw;
     display: flex;
 
@@ -32,13 +33,13 @@
     width: 75vw;
     margin: 1rem auto 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto ;
     grid-gap: 1rem;
   }
 
   &__item {
 
-    width: 20vw;
+    width: 75%;
 
     overflow: hidden;
     cursor: pointer;

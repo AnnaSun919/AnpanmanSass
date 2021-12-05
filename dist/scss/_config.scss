@@ -3,7 +3,8 @@ $secondary-color: rgb(179, 211, 240);
 $text-color:rgb(39, 37, 37);
 $title-color:rgb(87, 95, 62);
 $subtitle-color:rgb(112, 79, 60);
-$subtile-font-size: 1.2rem;
+$subtile-font-size: 0.5em;
+$big-screen-subtitle-font-size:1rem;
 $subtile-subtitle-font-size: 1em;
 $english-color: rgba(119, 118, 118, 0.541);
 
@@ -65,7 +66,7 @@ span{
 }
 
 @mixin media-md {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 580px) {
     @content;
   }
 }

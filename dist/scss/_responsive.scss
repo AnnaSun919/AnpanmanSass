@@ -6,7 +6,6 @@
 .home{
   margin-left: 25%;
 }
-
   .nav{
 
     width:0vw;
@@ -38,9 +37,6 @@
       flex-direction: row;
       flex-wrap: nowrap;
       align-items: center;
-  
- 
-  
      
       &__link{
         @include basic-link;
@@ -52,13 +48,65 @@
       }
     }
   }
+
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    align-items: flex-start;
+    
+
+  .image-container{
+    width: 30%;
+    text-align: center;
+    margin-right: 10px;
 }
 
-@include media-lg{
+.info{
+width: 80;
+  }
+}
 
+
+.characters{
+
+  &__items {
+ 
+    grid-template-columns: auto auto auto;
+
+  }
+
+  &__item {
+    width: 20vw;
+  }
+
+
+
+
+
+
+
+
+  span{
+    font-size:$big-screen-subtitle-font-size;
+  }
+}
+  }
+
+@include media-lg{
+  .characters{
+    span{
+      font-size:1.2rem
+    }
+  }
 }
 
 @include media-xl {
- 
+  .characters{
+    span{
+      font-size:1.5rem
+    }
+  }
 
 }
