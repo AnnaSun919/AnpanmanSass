@@ -10,7 +10,8 @@ background-color: blue;
   top: 1rem;
   height: 20px;
   cursor: pointer;
-  background-color: $primary-color;
+  padding: 20px;
+
   @include transition-ease;
 
 
